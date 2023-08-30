@@ -31,15 +31,15 @@
     top: 450px;
     left: 625px;
     background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
-    border-radius: 8px #fff;
     padding: 10px 20px;
     height: 80px;
     width: 200px;
     font-size: 24px;
-    font-family: poppins;
+    font-family: 'Poppins', sans-serif;
     cursor: pointer;
     transition: background-color 0.5s, color 0.5s;
     color: white;
+    border-radius: 10px;
 }
 
 
