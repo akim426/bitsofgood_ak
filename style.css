@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.intro {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+    animation: bgcolor 4s linear infinite;
+}
+
+.intro h2 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-family: poppins;
+    color: #fff;
+}
+
+
+.transparent-button {
+    display: inline-block;
+    position: relative;
+    top: 450px;
+    left: 625px;
+    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+    border-radius: 8px #fff;
+    padding: 10px 20px;
+    height: 80px;
+    width: 200px;
+    font-size: 24px;
+    font-family: poppins;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+    color: white;
+}
+
+
+.webpage {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.container {
+    display: flex;
+    width: 1250px;
+    height: 700px;
+    margin: 0 auto;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.intro-text {
+    color: #FFF;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.card {
+    background-color: #BBD0D1;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    height: 310px;
+    width: 410px;
+    position: relative;
+    margin-left: 150px;
+    margin-top: 30px;
+    color: #BBD0D1;
+    overflow: hidden;
+}
+
+.card::before 
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: conic-gradient(#f794a4 60deg, transparent 120deg);
+    animation: animate 3s linear infinite; 
+}
+
+.card::after
+{
+    content: "My name is Andrew and I'm a third-year at Georgia Tech. I study Computer Science and I like going to the gym in my free time. A social good I care about is mental health awareness. I'm passionate about mental health awareness because I believe that everyone deserves understanding, support, and resources to navigate their mental well-being. Breaking down stigma and fostering open conversations can create a more compassionate society where individuals feel comfortable seeking help. Additionally, I did a lot of volunteering for local businesses in highschool.";
+    width: 400px;
+    height: 300PX;
+    background: #BBD0D1;
+    position: absolute;
+    border-radius: 20px;
+    display: flex;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    box-shadow: inset 20px 20px 20px #BBD0D1;
+    color: white;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.resume {
+    background-color:  #cfd9df;
+    border: none;
+    height: 80px;
+    width: 150px;
+    font-size: 24px;
+    font-family: poppins;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 265px;
+    margin-right: 200px;
+    position: relative;
+    right: 250px;
+    border-radius: 10px;
+}
+
+
+@keyframes bgcolor {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes animate {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+
+    100%
+    {
+        transform: rotate(-360deg);
+    }
+}
+
